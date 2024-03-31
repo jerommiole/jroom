@@ -15,7 +15,7 @@ import { usePathname } from "next/navigation";
 const MobileNav = () => {
   const pathname = usePathname();
   return (
-    <section className="w-full max-w-[264px]">
+    <section className="w-full">
       <Sheet>
         <SheetTrigger asChild>
           <Image
@@ -29,18 +29,18 @@ const MobileNav = () => {
         <SheetContent side="left" className="border-none bg-dark-1">
           <Link href="/" className="flex items-center gap-1">
             <Image
-              src="/icons/logo.svg"
+              src="/icons/icon-jroom.svg"
               width={32}
               height={32}
-              alt="Joom Logo"
+              alt="Jroom Logo"
               className="max-sm:size-10"
             />
-            <p className="text-[26px] font-extrabold text-white">Joom</p>
+            <p className="text-[26px] font-extrabold text-white">Jroom</p>
           </Link>
 
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
             <SheetClose asChild>
-              <section className="flex h-full flex-col gap-6 p-16 text-white">
+              <section className="flex h-full flex-col gap-6 p-4 text-white mt-6">
                 {sidebarLinks.map((link) => {
                   const isActive = pathname === link.route;
 

@@ -11,10 +11,10 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Joom",
+  title: "Jroom",
   description: "Video calling app",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/icon-jroom.svg",
   },
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
       <ClerkProvider
         appearance={{
           layout: {
-            logoImageUrl: "/icons/yoom-logo.svg",
+            logoImageUrl: "/icons/logo-jroom.svg",
             socialButtonsVariant: "iconButton",
           },
           variables: {

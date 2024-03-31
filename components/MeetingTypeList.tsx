@@ -82,7 +82,7 @@ const MeetingTypeList = () => {
         title="New Meeting"
         description="Start an instant meeting"
         handleClick={() => setMeetingState("isInstantMeeting")}
-        className="bg-orange-1"
+        className="bg-green-1"
       />
       <HomeCard
         img="/icons/schedule.svg"
@@ -96,7 +96,7 @@ const MeetingTypeList = () => {
         title="View Recordings"
         description="Check out your recordings"
         handleClick={() => router.push("/recordings")}
-        className="bg-purple-1"
+        className="bg-red-1"
       />
       <HomeCard
         img="/icons/join-meeting.svg"
