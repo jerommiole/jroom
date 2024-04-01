@@ -7,6 +7,7 @@ import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "react-datepicker/dist/react-datepicker.css";
 
 import { Toaster } from "@/components/ui/toaster";
+import Matomo from "@/utils/Matomo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Matomo />
       <ClerkProvider
         appearance={{
           layout: {
