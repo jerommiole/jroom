@@ -92,6 +92,11 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+  .bg-image {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* animation */
